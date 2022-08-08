@@ -19,8 +19,7 @@ const printOutput1 = (output: string | number) => console.log(output);
 // (output: string | number) -> 자바스크립트처럼 인자가 하나이더라도 () 생략 안됨
 // 타입을 작성해야 하기 때문에
 // 인자의 타입을 생략하고 싶다면
-const printOutput2: (a: string | number) => void = (output) =>
-  console.log(output);
+const printOutput2: (a: string | number) => void = (output) => console.log(output);
 // 함수 타입을 지정하면 됨, 지금 괄호는 prettier가 강제로 넣어준거임
 
 // 4. spread 연산자
