@@ -20,7 +20,7 @@ interface Named {
 interface Greetable extends Named {
   greet(phrase: string): void;
 }
-// implements 는 extends 와 다르게 여러개 상속가능
+// implements 는 extends 와 다르게 여러개 상속가능 => interface or 추상 클래스중 내부에 추상 메소드만 있을경우
 class Person implements Greetable {
   name?: string;
   age = 30;
