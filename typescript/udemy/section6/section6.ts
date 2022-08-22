@@ -27,7 +27,8 @@ interface Employee1 {
 // 기존 타입들을 병합해서 새로운 타입 정의 (intersection type)
 type ElevatedEmployee = Admin & Employee;
 
-// interface 방식, implement아님?????
+// interface 방식, implement아님?????, implement는 클래스에서 사용하는 키워드
+// 클래스에서 implement를 사용할때는 interface에서 적용되는개념
 interface ElevatedEmployee1 extends Admin1, Employee1 {}
 
 const e1: ElevatedEmployee = {
@@ -100,7 +101,7 @@ function useVehicle(vehicle: Vehicle) {
   }
 
   // 위 처럼 in 키워드 방식의 타입가드도 가능하지만 클래스 기반의 타입은 instanceof 방식의 타입가드 사용가능!!!!
-  // 꼭 클래스형식의 타입에서만 interface형식에서 사용불가!!!!!
+  // 꼭 클래스형식의 타입에서만 interface형식에서 사용불가!!!!!, instanceof 생성자 함수를 호출하는
   if (vehicle instanceof Truck) {
     vehicle.loadCargo(1000);
   }
