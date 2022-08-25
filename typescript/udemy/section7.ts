@@ -48,3 +48,31 @@ function extractAndConvert<T extends object, U extends keyof T>(obj: T, key: U) 
 
 // 첫번째 인자인 객체에 두번째로 전달되는 키값이 없으면 에러발생
 extractAndConvert({ name: "gggg" }, "name");
+
+/***********************************************************************************************************/
+// 제네릭 클래스
+// 클래스에서 제네릭 사용 하는 방법
+class DataStorage<T> {
+  private data: T[] = [];
+
+  addItem(item: T) {
+    this.data.push(item);
+  }
+
+  removeItem(item: T) {
+    this.data.splice(this.data.indexOf(item), 1);
+  }
+
+  getItem() {
+    return [...this.data];
+  }
+}
+
+const textStorage = new DataStorage<string>();
+textStorage.addItem("Max");
+
+const numberStorage = new DataStorage<number>();
+numberStorage.addItem(10);
+
+// 제네릭 유틸리티 타입!???
+// Partial 타입??
