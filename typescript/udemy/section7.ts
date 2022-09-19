@@ -76,3 +76,9 @@ numberStorage.addItem(10);
 
 // 제네릭 유틸리티 타입!???
 // Partial 타입??
+
+// ?: 옵션널처럼 되는 효과, but 기존 타입선언부를 수정안하고 Partial 을 사용해서 기존꺼는 놔두고 사용이 가능함
+
+// Readonly => 수정불가
+
+
