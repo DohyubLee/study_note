@@ -1,4 +1,6 @@
 // *** 데코레이터
+// class 및 class 내부(property, method 등)을 정의를 수정 및 교체하는 Function
+// 런타임 환경에서 실행됨, 인스턴스화 안해도 호출됨
 
 // 데이코레이터 사용하기전 tsconfig.json에서 설정해야하는 것들
 // 1. target이 es6
