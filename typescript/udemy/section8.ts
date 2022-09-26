@@ -93,6 +93,8 @@ class Person3 {
 // Parameter 데코레이터, 매개변수에 적용되는 데코레이터 함수
 // 각각 인수의 설명은 대충함!!!!, 실행해서 찍어봐라
 
+// 각각 데코레이션 함수가 '@'으로 적용될때 따로 안자값 설정이 없으면 아래와 같이 정행진 매개변수로 받는다
+
 function Log(target: any, propertyName: string | Symbol) {
   console.log("Property decorator!");
   console.log(target, propertyName);
