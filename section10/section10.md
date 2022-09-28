@@ -79,6 +79,8 @@ namespace App {
 
 ## import 방식의 모듈화
 
+es6 버전이후의 방식
+
 webpack 같은 서드파티 번들링 도구가 없을시에는 꼭 확장자를 붙여줘야함
 
 `typescript`가 아닌 `javascript`로 `import`되어야함
