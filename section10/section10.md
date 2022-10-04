@@ -3,7 +3,7 @@ tsconfig.json
 "module": "amd" 란?
 
 `/// <reference path="components/project-list.ts" />` 란
-기본 js? 아님 ts문법?
+ts문법, 한 파일에 다 때려넣으면 의존성 문제가 생김
 
 `"outFile": "./dist/bundle.js", `
 
@@ -17,6 +17,7 @@ tsconfig.json
 
 - `namespace` 란
   클래스, 인터페이스, 각종 함수등등 그룹화하는 개념
+  ts에서의 개념
 
 ```typescript
 // 동일한 파일기준 예시
@@ -88,4 +89,12 @@ webpack 같은 서드파티 번들링 도구가 없을시에는 꼭 확장자를
 ```typescript
 // 예시
 import { ProjectList } from "./components/project-list.js";
+```
+
+`require` 랑 `import`는 버전의 차이가 아니라
+방식의 차이
+
+```html
+<script defer />
+// defer란 // 렌더가 다 완료되고나서 스크립트가 실행되라
 ```
